@@ -45,7 +45,7 @@
       <div class="container">
         <div class="rodape3">
           <p><sup>©</sup> 2021. Alguns direitos reservados.</p>
-          <a href="#"><img src="images/andrericardoweb-black.png" alt="Desenvolvedor: andrericardoweb"></a>
+          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/andrericardoweb-black.png" alt="Desenvolvedor: andrericardoweb"></a>
         </div>
         
       </div>

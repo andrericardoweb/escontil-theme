@@ -4,6 +4,7 @@
   get_header();
 ?>
 
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <!-- BANNER -->
   <section class="banner-page">
     <div class="container">
@@ -147,5 +148,7 @@
     </div>
   </section>
   <!--rodape-sugetoes-bg-->
+
+  <?php endwhile; else: endif; ?>
 
   <?php get_footer(); ?>
