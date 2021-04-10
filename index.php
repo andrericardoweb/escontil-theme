@@ -16,9 +16,8 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/16bd46d00e.js" crossorigin="anonymous"></script>
   
-  
   <!-- Styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
   <title>Escontil Contadores Associados</title>
 </head>
