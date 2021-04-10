@@ -19,7 +19,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
-  <title>Escontil Contadores Associados</title>
+  <title><?php bloginfo('name'); ?></title>
 
   <!-- Início Wordpress Header -->
   <?php wp_head(); ?>
