@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+  //Template Name: Contato
+
+  get_header();
+?>
 
   <!-- BANNER -->
   <section class="banner-page">

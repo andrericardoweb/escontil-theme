@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+  //Template Name: Quem Somos
+
+  get_header();
+?>
 
   <!-- BANNER -->
   <section class="banner-page">
