@@ -40,9 +40,16 @@
       
       <div class="superinfo-item superinfo-socialmedia">
         <ul class="socialmedia">
-          <li><a href="#"><img src="images/icons/whatsapp.svg" alt="Whatsapp"></a></li>
-          <li><a href="#"><img src="images/icons/instagram.svg" alt="Instagram"></a></li>
-          <li><a href="#"><img src="images/icons/facebook.svg" alt="Facebook"></a></li>
+
+          <!--Instagram-->
+          <li><a href="https://www.instagram.com/escontilcontadoresassociados/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/instagram.svg" alt="Instagram"></a></li>
+
+          <!--Facebook-->
+          <li><a href="https://www.facebook.com/escontilcontadoresassociados" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/facebook.svg" alt="Facebook"></a></li>
+
+          <!--Whatsapp-->
+          <li><a href="https://api.whatsapp.com/send?phone=558236211108" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/whatsapp.svg" alt="Whatsapp"></a></li>
+          
         </ul><!--socialmedia-->
       </div><!--superinfo-socialmedia-->  
     </div> <!--container superinfo-->
@@ -52,7 +59,7 @@
   <header>
     <section class="container container-menu">
       <div class="logo">
-        <a href="index.html"><img src="images/escontil-logo.png" alt="Escontil Associados"></a>
+        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/escontil-logo.png" alt="Escontil Associados"></a>
       </div><!--logo-->
 
       <nav class="menu-topo">
@@ -63,7 +70,7 @@
         </label>
 
         <ul>
-          <li class="logo-menu-mobile"><img src="images/escontil-logo.png" alt="Escontil Associados"></li>
+          <li class="logo-menu-mobile"><img src="<?php echo get_template_directory_uri(); ?>/images/escontil-logo.png" alt="Escontil Associados"></li>
           <li><a class="menu-ativo" href="/">Ínicio</a></li>
           <li><a href="/quem-somos/">Quem Somos</a></li>
           <li><a href="/servicos/">Serviços</a></li>
@@ -78,8 +85,8 @@
       </nav>
       
       <div class="whatsapp-top">
-        <a href="#" class="whatsapp-btn-top">
-          <img src="images/icons/whatsapp.svg" alt="Whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=558236211108" target="_blank" class="whatsapp-btn-top">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/icons/whatsapp.svg" alt="Whatsapp">
         </a>
       </div> <!--whatsapp-top-->
 
