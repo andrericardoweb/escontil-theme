@@ -1,5 +1,5 @@
 <section class="banner-page">
   <div class="container">
-    <h2>Título da Página</h2>
+    <h2><?php the_title(); ?></h2>
   </div>
 </section>
