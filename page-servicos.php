@@ -5,12 +5,9 @@
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <!-- BANNER -->
-  <section class="banner-page">
-    <div class="container">
-      <h2>Serviços</h2>
-    </div>
-  </section>
+  
+  <!-- BANNER - INTRO -->
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
   <!-- SERVIÇOS -->
   <section class="container servicos-interno-container">
@@ -73,44 +70,11 @@
   </section><!--container-->
 
 
-  <!-- DIFERENCIAIS -->
-  <section class="diferenciais-bg">
-    <h2>Diferenciais</h2>
-    <p>Vamos além das obrigações fiscais</p>
-    <div class="container diferenciais">
-      <div class="diferenciais-item">
-         <img src="images/icons/work-space.svg">
-         <h3>Educação<br>Empreendedora</h3>
-         <p>Promover educação contínua visando gestão empresarial mais assertiva. Sendo disponibilizado, gratuitamente, cursos em Administração e Finanças; Vendas e Marketing. </p>
-      </div><!--diferenciais-item-->
+  <!-- Diferenciais -->
+  <?php include(TEMPLATEPATH . "/inc/diferenciais-section.php"); ?>
 
-      <div class="diferenciais-item">
-        <img src="images/icons/balance.svg">
-        <h3>Assessoria Jurídica<br>Especializada</h3>
-        <p>A assessoria jurídica é um serviço de apoio. Consiste, assim, em esclarecer questões ligadas ao universo do Direito e prestar informações e opiniões especializadas.</p>
-     </div><!--diferenciais-item-->
-
-      <div class="diferenciais-item">
-        <img src="images/icons/meeting.svg">
-        <h3>Consultoria em Gestão<br>Empresarial</h3>
-        <p>Promover educação contínua visando gestão empresarial mais assertiva. Sendo disponibilizado, gratuitamente, cursos em Administração e Finanças; Vendas e Marketing. </p>
-      </div><!--diferenciais-item--> 
-    </div><!--diferenciais-->
-    <div class="diferenciais-btns">
-      <a class="btn-whatsapp-banner" href="#">Atendimento via WhatsApp</a>
-    </div>    
-  </section>
-
-    <!-- MISSAO-BOX -->
-    <section class="missao-box-bg">
-      <div class="container missao-box">
-        <img src="images/escontil-logo-circular.png" alt="Logo - Escontil Associados">
-        <p>Nossa <b>missão</b> é atender as necessidades dos clientes com <b>Soluções de Gestão Empresarial e Contábeis</b> de excelência e qualidade, utilizando-se de ferramentas tecnológicas avançadas e príncipios legais, que possam suprir as variadas demandas do mercado.</p>
-      </div>
-      <div class="missao-box-btn">
-        <a href="#">Saiba mais sobre nós</a>
-      </div>
-    </section>
+  <!-- Missao -->
+  <?php include(TEMPLATEPATH . "/inc/missao-section.php"); ?>
 
   <!-- ULTIMAS-PUBLICAÇÕES -->
   <section class="destaques-interno-bg">
@@ -141,37 +105,10 @@
   </section>
   
   <!-- CTA -->
-  <section class="cta-bg">
-    <h2>Estamos prontos para lhe atender</h2>
-    <div class="cta-btn">
-      <a class="btn-whatsapp-banner" href="#">Fale Conosco via WhatsApp</a>
-    </div>
-  </section>
+  <?php include(TEMPLATEPATH . "/inc/cta-section.php"); ?>
 
-  <section class="rodape-sugestoes-bg">
-    <div class="rodape-sugestoes container">
-      <div class="rodape-sugestoes-info">
-        <h2>Elogios,<br>sugestões e<br>reclamações<br></h2>
-        <p>Nosso objetivo é melhorar a cada dia, por isso pedimos que nos ajudem a saber onde estamos acertando ou errando, além de enviar sugestões para nosso trabalho.</p>
-      </div><!--rodape-sugestoes-bg-info-->
-      <div class="rodape-sugestoes-form">
-        <form action="">
-          <div class="rodape-sugestoes-form-2">
-            <input type="text" name="nome" id="nome" placeholder="Nome (Opcional)">
-          </div>
-          <div class="rodape-sugestoes-form-2">
-            <input type="tel" name="fone" id="fone" placeholder="Celular (Opcional)">
-            <input type="email" name="email" id="email" placeholder="E-mail (Opcional)">
-          </div>
-          <div class="rodape-sugestoes-form-2">
-            <textarea name="msg-sugestoes" id="msg-sugestoes" placeholder="Digite aqui sua sugestão, reclamação ou elogio."></textarea> 
-          </div>
-
-          <button type="submit">Enviar Mensagem</button>
-        </form>
-      </div>
-    </div>
-  </section><!--rodape-sugetoes-bg-->
+  <!-- Sugestoes - Form -->
+  <?php include(TEMPLATEPATH . "/inc/sugestoes-section.php"); ?>
 
   <?php endwhile; else: endif; ?>
 

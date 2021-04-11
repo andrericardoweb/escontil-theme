@@ -5,12 +5,8 @@
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <!-- BANNER -->
-  <section class="banner-page">
-    <div class="container">
-      <h2>Quem Somos</h2>
-    </div>
-  </section>
+  <!-- BANNER - INTRO -->
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
   <!-- Quem Somos -->
   <section class="container quem-somos">
@@ -82,12 +78,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-bg">
-    <h2>Estamos prontos para lhe atender</h2>
-    <div class="cta-btn">
-      <a class="btn-whatsapp-banner" href="#">Fale Conosco via WhatsApp</a>
-    </div>
-  </section>
+  <?php include(TEMPLATEPATH . "/inc/cta-section.php"); ?>
 
   <!-- Diretores -->
   <section class="diretores-bg">
@@ -118,36 +109,8 @@
 
   </section>
 
-
-
-  <section class="rodape-sugestoes-bg">
-    <div class="rodape-sugestoes container">
-      <div class="rodape-sugestoes-info">
-        <h2>Elogios,<br>sugestões e<br>reclamações<br></h2>
-        <p>Nosso objetivo é melhorar a cada dia, por isso pedimos que nos ajudem a saber onde estamos acertando ou
-          errando, além de enviar sugestões para nosso trabalho.</p>
-      </div>
-      <!--rodape-sugestoes-bg-info-->
-      <div class="rodape-sugestoes-form">
-        <form action="">
-          <div class="rodape-sugestoes-form-2">
-            <input type="text" name="nome" id="nome" placeholder="Nome (Opcional)">
-          </div>
-          <div class="rodape-sugestoes-form-2">
-            <input type="tel" name="fone" id="fone" placeholder="Celular (Opcional)">
-            <input type="email" name="email" id="email" placeholder="E-mail (Opcional)">
-          </div>
-          <div class="rodape-sugestoes-form-2">
-            <textarea name="msg-sugestoes" id="msg-sugestoes"
-              placeholder="Digite aqui sua sugestão, reclamação ou elogio."></textarea>
-          </div>
-
-          <button type="submit">Enviar Mensagem</button>
-        </form>
-      </div>
-    </div>
-  </section>
-  <!--rodape-sugetoes-bg-->
+  <!-- Sugestoes - Form -->
+  <?php include(TEMPLATEPATH . "/inc/sugestoes-section.php"); ?>
 
   <?php endwhile; else: endif; ?>
 

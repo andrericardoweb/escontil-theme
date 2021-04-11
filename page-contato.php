@@ -5,12 +5,9 @@
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <!-- BANNER -->
-  <section class="banner-page">
-    <div class="container">
-      <h2>Contato</h2>
-    </div>
-  </section>
+  
+  <!-- Banner - Intro -->
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
   <!-- SERVIÇOS -->
   <section class="container servicos-interno-container">

@@ -8,15 +8,21 @@ Version: 1.0
 */
 
 
-@import 'css/reset.css';
-@import 'css/normalize.css';
-
-/* Gerais */
+/* Reset */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+  margin: 0px;
+  padding: 0px;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   color: #222;
 }
-
+ul{
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   display: block;
@@ -239,7 +245,7 @@ img {
 /* BANNER */
 .banner {
   z-index: -2;
-  background: #991111 url(../images/bg-banner.jpg) no-repeat bottom;
+  background: #991111 url(images/bg-banner.jpg) no-repeat bottom;
   background-size: cover;
   height: 230px;
   width: 100%;
@@ -285,7 +291,7 @@ img {
   color: #ffffff;
   font-weight: normal;
   font-size: 0.9em;
-  box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+  box-shadow: 0px 2px 3px rgba(53, 44, 44, 0.4);
 }
 .btn-whatsapp-banner:hover{
   background: #068034;
@@ -297,7 +303,7 @@ img {
 /* Banner - Páginas internas */
 .banner-page {
   z-index: -2;
-  background: #991111 url(../images/bg-banner.jpg) no-repeat center;
+  background: #991111 url(images/bg-banner.jpg) no-repeat center;
   background-size: cover;
   min-height: 150px;
   width: 100%;
@@ -330,7 +336,7 @@ img {
 /* BANNER menu */
 @media (max-width:799px) {
   .banner {
-    background: url(../images/bg-banner-mobile.jpg);
+    background: url(images/bg-banner-mobile.jpg);
     height: 280px;
   }
   .banner h1 {  
@@ -530,18 +536,25 @@ img {
 }
 .diferenciais-item {
   flex: 1 1 200px;
+  background: #fcfcfc;
   padding: 15px;
   margin: 15px;
-  border: #222 solid 1px;
+  border: #7c7c7c solid 1px;
+  box-shadow: 2px 4px 4px rgba(53, 44, 44, 0.2);
   border-radius: 10px;
 }
 .diferenciais-item h3 {
+  font-size: 1.5em;
+  line-height: 1.2em;
   padding: 15px 0;
   color: #991111;
+  max-width: 80%;
+  font-weight: bold;
 }
 .diferenciais-item p {
   text-align: left;
-  font-size: 1em;
+  font-size: 1.125em;
+  color: #2a2b2f;
 }
 .diferenciais-btns {
   display: flex;

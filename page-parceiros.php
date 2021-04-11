@@ -5,12 +5,9 @@
 ?>
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <!-- BANNER -->
-  <section class="banner-page">
-    <div class="container">
-      <h2>Parceiros</h2>
-    </div>
-  </section>
+
+  <!-- BANNER - INTRO -->
+  <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
   <!-- PÁG. CLIENTES -->
 
@@ -19,39 +16,39 @@
     <p>Comprometido com o sucesso de nossos clientes buscamos a construção de parcerias estratégicas quem possam beneficiá-los.</p>
     <div class="parceiros-interno">
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/fenacon.png" alt="FENACON | CD">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/fenacon.png" alt="FENACON | CD">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/contadores-do-bem-selo.png" alt="Contador do Bem">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/contadores-do-bem-selo.png" alt="Contador do Bem">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/parceiro-omie.png" alt="PArceiro Omie">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/parceiro-omie.png" alt="PArceiro Omie">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/omnie.png" alt="Omie">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/omnie.png" alt="Omie">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/ideal-marcas.png" alt="Ideal Marcas">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/ideal-marcas.png" alt="Ideal Marcas">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/selo-iob.png" alt="Selo IOB">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/selo-iob.png" alt="Selo IOB">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/contador-parceiro-sebrae.png" alt="Contador Parceiro - Sebrae">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/contador-parceiro-sebrae.png" alt="Contador Parceiro - Sebrae">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/sescap-al.png" alt="SESCAP AL">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/sescap-al.png" alt="SESCAP AL">
       </div>
 
       <div class="parceiros-interno-item">
-        <img src="images/parceiros/abrir-empresa-simples.png" alt="Abertura Simples">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/abrir-empresa-simples.png" alt="Abertura Simples">
       </div>
       
     </div><!--servicos-->
@@ -66,7 +63,7 @@
         </div>
   
         <div class="parceiro-destaque-img">
-          <img src="images/parceiros/omnie-academy-destaque.png" alt="Omie Academy">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/omnie-academy-destaque.png" alt="Omie Academy">
         </div>
       </div>
     </div>
@@ -79,7 +76,7 @@
         </div>
   
         <div class="parceiro-destaque-img">
-          <img src="images/parceiros/ideal-marcas-destaque.png" alt="Ideal Marcas e Patentes">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/ideal-marcas-destaque.png" alt="Ideal Marcas e Patentes">
         </div>
       </div>
     </div>
@@ -92,7 +89,7 @@
         </div>
   
         <div class="parceiro-destaque-img">
-          <img src="images/parceiros/abrir-empresa-simples-destaque.png" alt="Abertura Simples">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/abrir-empresa-simples-destaque.png" alt="Abertura Simples">
         </div>
       </div>
     </div>
@@ -106,44 +103,17 @@
         </div>
   
         <div class="parceiro-destaque-img">
-          <img src="images/parceiros/fenacon-destaque.png" alt="FENACON|CD - AR Service">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/fenacon-destaque.png" alt="FENACON|CD - AR Service">
         </div>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
-  <section class="cta-bg">
-    <h2>Estamos prontos para lhe atender</h2>
-    <div class="cta-btn">
-      <a class="btn-whatsapp-banner" href="#">Fale Conosco via WhatsApp</a>
-    </div>
-  </section>
+  <?php include(TEMPLATEPATH . "/inc/cta-section.php"); ?>
 
-  <section class="rodape-sugestoes-bg">
-    <div class="rodape-sugestoes container">
-      <div class="rodape-sugestoes-info">
-        <h2>Elogios,<br>sugestões e<br>reclamações<br></h2>
-        <p>Nosso objetivo é melhorar a cada dia, por isso pedimos que nos ajudem a saber onde estamos acertando ou errando, além de enviar sugestões para nosso trabalho.</p>
-      </div><!--rodape-sugestoes-bg-info-->
-      <div class="rodape-sugestoes-form">
-        <form action="">
-          <div class="rodape-sugestoes-form-2">
-            <input type="text" name="nome" id="nome" placeholder="Nome (Opcional)">
-          </div>
-          <div class="rodape-sugestoes-form-2">
-            <input type="tel" name="fone" id="fone" placeholder="Celular (Opcional)">
-            <input type="email" name="email" id="email" placeholder="E-mail (Opcional)">
-          </div>
-          <div class="rodape-sugestoes-form-2">
-            <textarea name="msg-sugestoes" id="msg-sugestoes" placeholder="Digite aqui sua sugestão, reclamação ou elogio."></textarea> 
-          </div>
-
-          <button type="submit">Enviar Mensagem</button>
-        </form>
-      </div>
-    </div>
-  </section><!--rodape-sugetoes-bg-->
+  <!-- Sugestoes - Form -->
+  <?php include(TEMPLATEPATH . "/inc/sugestoes-section.php"); ?>
 
   <?php endwhile; else: endif; ?>
 
