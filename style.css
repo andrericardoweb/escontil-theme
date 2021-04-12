@@ -1340,6 +1340,7 @@ img {
 }
 
 .parceiros-interno-item {
+  min-height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
