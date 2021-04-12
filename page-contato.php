@@ -9,140 +9,78 @@
   <!-- Banner - Intro -->
   <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
-  <!-- SERVIÇOS -->
-  <section class="container servicos-interno-container">
-    <div class="servicos-interno">
-      <div class="servicos-interno-item">
-        <div class="servicos-interno-item-titulo">
-          <h3>Departamento<br>Pessoal</h3>
-          <img src="images/ilustration/departamento-pessoal.svg">         
-        </div>
-        
-        <p>O departamento pessoal é imprescindível para o bom funcionamento da empresa sabendo que é responsável pela organização e manutenção do arquivo que contém toda a documentação, expedida durante a realização das rotinas, exigidas pelo governo.</p>
-        
-        <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-        </div>
+  <!--contato-->
+  <section class="container contato-container">
+    <h2>Entre em contato conosco</h2>
+    <div class="contato">
 
-      </div><!--servicos-item-->
-
-      <div class="servicos-interno-item">
-        <div class="servicos-interno-item-titulo">
-          <h3>Escrita Fiscal e<br>Tributos</h3>
-          <img src="images/ilustration/escrita-fiscal-tributos.svg">        
-        </div>
-        
-        <p>Escrita Fiscal e Tributos é uma das áreas mais delicadas de uma empresa, é a contabilidade fiscal que registra os fatos do dia a dia, servindo como base para a apuração de impostos, atendimento entre as exigências fiscais e o controle das receitas e despesas da empresa.</p>
-                
-        <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-        </div>
-
-      </div><!--servicos-item-->
-
-      <div class="servicos-interno-item">
-        <div class="servicos-interno-item-titulo">
-          <h3>Área<br>Contábil</h3>
-          <img src="images/ilustration/area-contabil.svg">        
-        </div>
-        <p>A prestação de serviços na área contábil visa instruir o empreendedor com informações sobre aspectos de natureza econômico, financeira e física do patrimônio da empresa e suas transformações, o que compreende registros, demonstrações...</p>
-
-        <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-        </div>
-
-      </div><!--servicos-item-->
-
-      <div class="servicos-interno-item">
-        <div class="servicos-interno-item-titulo">
-          <h3>Legalização<br>Fiscal</h3>
-          <img src="images/ilustration/legalizacao-fiscal.svg">        
-        </div>
-
-        <p>Se você tem interesse em iniciar seu próprio negócio (mas não sabe exatamente como fazê-lo), a Escontil Contadores Associados irá te ajudar a encontrar o melhor caminho para formalizar a sua empresa. O nosso escritório, coloca-se à sua disposição para fornecer toda orientação...</p>
-        
-        <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-        </div>    
-      </div><!--servicos-item-->
+      <div class="contato-form-container">
       
-    </div><!--servicos-->
-  </section><!--container-->
+        <form action="enviar.php" method="post" name="form" class="contato-form">
+          <div class="contato-form-item">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+          </div>
+          
+          <div class="contato-form-2">
+            <div class="contato-form-item-2">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email"  placeholder="Digite seu e-mail" class="contato-form-item" required>
+            </div>
 
+            <div class="contato-form-item-2">
+              <label for="telefone">Telefone:</label>
+              <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" class="contato-form-item" required>
+            </div>
+
+          </div>
+
+          <div class="contato-form-item">
+            <label for="mensagem">Mensagem: </label>
+            <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit" id="enviar-msg" name="enviar-msg" class="btn-contato">Enviar mensagem</button>
+          </div>
+
+          
+        </form>
+      </div>
+
+      <div class="contato-whatsapp">
+        <div class="contato-box-whatsapp">
+          <h3>Fale conosco diretamente através do nosso Whatsapp</h3>
+          
+          <div>
+            <img src="<?php echo get_template_directory_uri(); ?>/images/ilustration/contato-card-whatsapp.png">
+          </div>
+
+          <div class="whatsapp-contato">
+            <a href="https://api.whatsapp.com/send?phone=558236211108" target="_blank" class="whatsapp-btn-contato">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/icons/whatsapp-green.svg" alt="Whatsapp">
+            </a>
+          </div> <!--whatsapp-contato-->
+
+
+        </div>
+      </div>
+
+    </div>  
+  </section>
 
   <!-- DIFERENCIAIS -->
-  <section class="diferenciais-bg">
-    <h2>Diferenciais</h2>
-    <p>Vamos além das obrigações fiscais</p>
-    <div class="container diferenciais">
-      <div class="diferenciais-item">
-         <img src="images/icons/work-space.svg">
-         <h3>Educação<br>Empreendedora</h3>
-         <p>Promover educação contínua visando gestão empresarial mais assertiva. Sendo disponibilizado, gratuitamente, cursos em Administração e Finanças; Vendas e Marketing. </p>
+  <section class="contato-mapa-bg">
+    <h2>Onde Estamos</h2>
+    <p>Saiba como chegar ao nosso escritório</p>
+    <div class="container contato-mapa">
+      <div class="contato-mapa-item">
+         <p>Código do mapa</p>
       </div><!--diferenciais-item-->
 
-      <div class="diferenciais-item">
-        <img src="images/icons/balance.svg">
-        <h3>Assessoria Jurídica<br>Especializada</h3>
-        <p>A assessoria jurídica é um serviço de apoio. Consiste, assim, em esclarecer questões ligadas ao universo do Direito e prestar informações e opiniões especializadas.</p>
-     </div><!--diferenciais-item-->
-
-      <div class="diferenciais-item">
-        <img src="images/icons/meeting.svg">
-        <h3>Consultoria em Gestão<br>Empresarial</h3>
-        <p>Promover educação contínua visando gestão empresarial mais assertiva. Sendo disponibilizado, gratuitamente, cursos em Administração e Finanças; Vendas e Marketing. </p>
-      </div><!--diferenciais-item--> 
+      
     </div><!--diferenciais-->
-    <div class="diferenciais-btns">
-      <a class="btn-whatsapp-banner" href="#">Atendimento via WhatsApp</a>
-    </div>    
-  </section>
-
-    <!-- MISSAO-BOX -->
-    <section class="missao-box-bg">
-      <div class="container missao-box">
-        <img src="images/escontil-logo-circular.png" alt="Logo - Escontil Associados">
-        <p>Nossa <b>missão</b> é atender as necessidades dos clientes com <b>Soluções de Gestão Empresarial e Contábeis</b> de excelência e qualidade, utilizando-se de ferramentas tecnológicas avançadas e príncipios legais, que possam suprir as variadas demandas do mercado.</p>
-      </div>
-      <div class="missao-box-btn">
-        <a href="#">Saiba mais sobre nós</a>
-      </div>
-    </section>
-
-  <!-- ULTIMAS-PUBLICAÇÕES -->
-  <section class="destaques-interno-bg">
-    <h2>Destaques</h2>
-    <div class="container destaques-interno">
-      <div class="destaques-interno-item">
-         <img src="images/certificado-digital.jpg">
-         <h3>Certificado Digital</h3>
-         <p>Em parceria com a FENACON - AR SERVICE - Santana do Ipanema/AL, realizamos a emissão do seu certificado digital. Ganhe rapidez, segurança e economia.</p>
-         <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-      </div><!--ultimas-publicacoes-item-->
-
-      <div class="destaques-interno-item">
-        <img src="images/recuperacao-credito.jpg">
-        <h3>Recuperação de Créditos</h3>
-        <p>Sua empresa é optante pelo Simples Nacional? Então você pode ter direito a Recuperação de Créditos Tributários. Aproveite essa possibilidade de injetar novos recursos na sua empresa.</p>
-        <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-      </div><!--ultimas-publicacoes-item-->
-
-      <div class="destaques-interno-item">
-        <img src="images/registro-de-marcas.jpg">
-        <h3>Registro de Marcas</h3>
-        <p>Somos parceiros da Ideal Marcas & Patentes - empresa com mais de 20 anos de experiência no registro de Marcas, Patentes, Propriedade Industrial e Intelectual.</p>
-        <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-      </div><!--ultimas-publicacoes-item-->
-
-    </div><!--ultimas-publicacoes-->   
-  </section>
-  
-  <!-- CTA -->
-  <section class="cta-bg">
-    <h2>Estamos prontos para lhe atender</h2>
-    <div class="cta-btn">
-      <a class="btn-whatsapp-banner" href="#">Fale Conosco via WhatsApp</a>
-    </div>
+      
   </section>
 
   <?php endwhile; else: endif; ?>
