@@ -13,43 +13,18 @@
 
   <!-- SERVIÇOS -->
   <section class="container parceiros-container">
-    <p>Comprometido com o sucesso de nossos clientes buscamos a construção de parcerias estratégicas quem possam beneficiá-los.</p>
+    <p><?php the_field('parceiros_introducao'); ?></p>
     <div class="parceiros-interno">
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/fenacon.png" alt="FENACON | CD">
-      </div>
 
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/contadores-do-bem-selo.png" alt="Contador do Bem">
-      </div>
+      <?php if(have_rows('item_parceiros_logo')) : while(have_rows('item_parceiros_logo')) : the_row() ?>
+        
+        <a href="<?php the_sub_field('parceiros_link'); ?>">
+          <div class="parceiros-interno-item">
+            <img src="<?php the_sub_field('parceiros_logo'); ?>" alt="<?php the_sub_field('parceiros_nome'); ?>">
+          </div>
+        </a>
 
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/parceiro-omie.png" alt="PArceiro Omie">
-      </div>
-
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/omnie.png" alt="Omie">
-      </div>
-
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/ideal-marcas.png" alt="Ideal Marcas">
-      </div>
-
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/selo-iob.png" alt="Selo IOB">
-      </div>
-
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/contador-parceiro-sebrae.png" alt="Contador Parceiro - Sebrae">
-      </div>
-
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/sescap-al.png" alt="SESCAP AL">
-      </div>
-
-      <div class="parceiros-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/parceiros/abrir-empresa-simples.png" alt="Abertura Simples">
-      </div>
+      <?php endwhile; else : endif; ?>
       
     </div><!--servicos-->
   </section><!--container-->
