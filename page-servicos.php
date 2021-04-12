@@ -12,59 +12,24 @@
   <!-- SERVIÇOS -->
   <section class="container servicos-interno-container">
     <div class="servicos-interno">
+
+    <?php if(have_rows('item_servicos')) : while(have_rows('item_servicos')) : the_row() ?>
+
       <div class="servicos-interno-item">
         <div class="servicos-interno-item-titulo">
-          <h3>Departamento<br>Pessoal</h3>
-          <img src="images/ilustration/departamento-pessoal.svg">         
+          <h3><?php the_sub_field('servicos_titulo'); ?></h3>
+          <img src="<?php the_sub_field('servicos_image'); ?>">         
         </div>
         
-        <p>O departamento pessoal é imprescindível para o bom funcionamento da empresa sabendo que é responsável pela organização e manutenção do arquivo que contém toda a documentação, expedida durante a realização das rotinas, exigidas pelo governo.</p>
+        <p><?php the_sub_field('servicos_descricao'); ?> </p>
         
         <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+          <a href="<?php the_sub_field('servicos_link'); ?>">Saiba mais <i class="fas fa-angle-right"></i></a>
         </div>
 
       </div><!--servicos-item-->
 
-      <div class="servicos-interno-item">
-        <div class="servicos-interno-item-titulo">
-          <h3>Escrita Fiscal e<br>Tributos</h3>
-          <img src="images/ilustration/escrita-fiscal-tributos.svg">        
-        </div>
-        
-        <p>Escrita Fiscal e Tributos é uma das áreas mais delicadas de uma empresa, é a contabilidade fiscal que registra os fatos do dia a dia, servindo como base para a apuração de impostos, atendimento entre as exigências fiscais e o controle das receitas e despesas da empresa.</p>
-                
-        <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-        </div>
-
-      </div><!--servicos-item-->
-
-      <div class="servicos-interno-item">
-        <div class="servicos-interno-item-titulo">
-          <h3>Área<br>Contábil</h3>
-          <img src="images/ilustration/area-contabil.svg">        
-        </div>
-        <p>A prestação de serviços na área contábil visa instruir o empreendedor com informações sobre aspectos de natureza econômico, financeira e física do patrimônio da empresa e suas transformações, o que compreende registros, demonstrações...</p>
-
-        <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-        </div>
-
-      </div><!--servicos-item-->
-
-      <div class="servicos-interno-item">
-        <div class="servicos-interno-item-titulo">
-          <h3>Legalização<br>Fiscal</h3>
-          <img src="images/ilustration/legalizacao-fiscal.svg">        
-        </div>
-
-        <p>Se você tem interesse em iniciar seu próprio negócio (mas não sabe exatamente como fazê-lo), a Escontil Contadores Associados irá te ajudar a encontrar o melhor caminho para formalizar a sua empresa. O nosso escritório, coloca-se à sua disposição para fornecer toda orientação...</p>
-        
-        <div class="servicos-interno-btn">
-          <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
-        </div>    
-      </div><!--servicos-item-->
+    <?php endwhile; else : endif; ?>
       
     </div><!--servicos-->
   </section><!--container-->
