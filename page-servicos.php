@@ -4,6 +4,8 @@
   get_header();
 ?>
 
+<?php $home = get_page_by_title('home'); ?>
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   
   <!-- BANNER - INTRO -->
@@ -46,24 +48,24 @@
     <h2>Destaques</h2>
     <div class="container destaques-interno">
       <div class="destaques-interno-item">
-         <img src="images/certificado-digital.jpg">
-         <h3>Certificado Digital</h3>
-         <p>Em parceria com a FENACON - AR SERVICE - Santana do Ipanema/AL, realizamos a emissão do seu certificado digital. Ganhe rapidez, segurança e economia.</p>
-         <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+         <img src="<?php the_field('destaque1_imagem', $home); ?>">
+         <h3><?php the_field('destaque1_titulo', $home); ?></h3>
+         <p><?php the_field('destaque1_descricao', $home); ?></p>
+         <a href="<?php the_field('destaque1_link', $home); ?>">Saiba mais <i class="fas fa-angle-right"></i></a>
       </div><!--ultimas-publicacoes-item-->
 
       <div class="destaques-interno-item">
-        <img src="images/recuperacao-credito.jpg">
-        <h3>Recuperação de Créditos</h3>
-        <p>Sua empresa é optante pelo Simples Nacional? Então você pode ter direito a Recuperação de Créditos Tributários. Aproveite essa possibilidade de injetar novos recursos na sua empresa.</p>
-        <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+         <img src="<?php the_field('destaque2_imagem', $home); ?>">
+         <h3><?php the_field('destaque2_titulo', $home); ?></h3>
+         <p><?php the_field('destaque2_descricao', $home); ?></p>
+         <a href="<?php the_field('destaque2_link', $home); ?>">Saiba mais <i class="fas fa-angle-right"></i></a>
       </div><!--ultimas-publicacoes-item-->
 
       <div class="destaques-interno-item">
-        <img src="images/registro-de-marcas.jpg">
-        <h3>Registro de Marcas</h3>
-        <p>Somos parceiros da Ideal Marcas & Patentes - empresa com mais de 20 anos de experiência no registro de Marcas, Patentes, Propriedade Industrial e Intelectual.</p>
-        <a href="#">Saiba mais <i class="fas fa-angle-right"></i></a>
+         <img src="<?php the_field('destaque3_imagem', $home); ?>">
+         <h3><?php the_field('destaque3_titulo', $home); ?></h3>
+         <p><?php the_field('destaque3_descricao', $home); ?></p>
+         <a href="<?php the_field('destaque3_link', $home); ?>">Saiba mais <i class="fas fa-angle-right"></i></a>
       </div><!--ultimas-publicacoes-item-->
 
     </div><!--ultimas-publicacoes-->   
