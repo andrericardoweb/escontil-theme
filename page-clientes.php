@@ -13,43 +13,19 @@
 
   <!-- SERVIÇOS -->
   <section class="container clientes-container">
-    <p>Trabalhamos com profissionalismo e responsabilidade e dessa maneira conquistamos a confiança dos nossos clientes em Maceió e Sertão Alagoano.</p>
+    <p><?php the_field('clientes_introducao'); ?></p>
     <div class="clientes-interno">
-      <div class="clientes-interno-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/vangas.png" alt="Van Gás">
-      </div>
+    
+      <?php if(have_rows('item_clientes_logo')) : while(have_rows('item_clientes_logo')) : the_row() ?>
       
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/vanferragens.png" alt="Van Ferramentas">
-      </div>
-      
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/amorin-moveis-e-eletros.png" alt="Amorin Móveis e Eletros">
-      </div>
+        <a href="<?php the_sub_field('clientes_link'); ?>" target="_blank">
+          <div class="clientes-interno-item">
+            <img src="<?php the_sub_field('clientes_logo'); ?>" alt="<?php the_sub_field('clientes_nome'); ?>">
+          </div>
+        </a>
 
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/agrovan.png" alt="Agro Van">
-      </div>
-      
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/zoo-premium.png" alt="Zoo Premium">
-      </div>
-      
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/alagoaseletrolar.png" alt="Alagoas Eletrolar">
-      </div>
-      
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/mercado-lopes.png" alt="Mercado Lopes">
-      </div>
-      
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/comercial-ferreira.png" alt="Comercial Ferreira">
-      </div>
-      
-      <div class="clientes-interno-item">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/clientes/supermercado-melhor-preco.png" alt="Supermercado Melhor Preço">
-      </div>  
+      <?php endwhile; else : endif; ?>
+
     </div><!--servicos-->
   </section><!--container-->
 
