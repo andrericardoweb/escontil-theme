@@ -30,6 +30,7 @@
   </section><!--container-->
 
   <section class="parceiro-destaque-container">
+
     <div class="bg-degrade-red">
       <div class="container parceiro-destaque-a">
         <div class="parceiro-destaque-info">
@@ -71,7 +72,7 @@
     
 
     <div class="bg-degrade-gray">
-      <div class="parceiro-destaque-b">
+      <div class="container parceiro-destaque-b">
         <div class="parceiro-destaque-info">
           <h3>FENACON|CD - AR Service</h3>
           <p>Em parceria com a FENACON|CD - AR SERVICE, realizamos as etapas necessárias para emissão do seu certificado digital. Com esse recurso os empreendedores garantem uma maior segurança e confiabilidade no tráfego das suas informações, além disso, também reduzem burocracias.</p>
