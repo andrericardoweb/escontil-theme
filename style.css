@@ -1643,7 +1643,7 @@ img {
 .contato-mapa-item {
   flex: 1;
   background: #fcfcfc;
-  padding: 15px;
+  padding: 5px;
   margin: 15px;
   border: #7c7c7c solid 2px;
   box-shadow: 2px 4px 4px rgba(53, 44, 44, 0.2);
