@@ -15,4 +15,15 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 // Habilitar Menus
 add_theme_support('menus');
 
+// Registrar o Menu
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Menu Topo' ),
+      'footer-menu' => __( 'Menu Rodapé' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
+
 ?>

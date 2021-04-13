@@ -69,19 +69,14 @@
           <i class="fas fa-bars"></i>
         </label>
 
-        <ul>
-          <li class="logo-menu-mobile"><img src="<?php echo get_template_directory_uri(); ?>/images/escontil-logo.png" alt="Escontil Associados"></li>
-          <li><a class="menu-ativo" href="/">Ínicio</a></li>
-          <li><a href="/quem-somos/">Quem Somos</a></li>
-          <li><a href="/servicos/">Serviços</a></li>
-          <li><a href="/clientes/">Clientes</a></li>
-          <li><a href="/parceiros/">Parceiros</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="/contato/">Contato</a></li>
-          <label class="menu-toggler-icon-close" for="menu-toggler">
-            <i class="fas fa-times"></i> Fechar
-          </label> 
-        </ul><!--menu-topo-->
+        <?php
+        	$args = array(
+            'menu' => 'principal',
+            'theme_location' => 'header-menu',
+            'container' => false
+          );
+          wp_nav_menu( $args );
+        ?>
       </nav>
       
       <div class="whatsapp-top">
