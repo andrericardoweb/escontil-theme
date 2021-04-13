@@ -19,7 +19,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
-  <title><?php bloginfo('name'); ?></title>
+  <title><?php bloginfo('name'); wp_title(' - '); ?> </title>
 
   <!-- Início Wordpress Header -->
   <?php wp_head(); ?>
@@ -69,13 +69,27 @@
           <i class="fas fa-bars"></i>
         </label>
 
+        <ul>
+          <li class="logo-menu-mobile"><img src="<?php echo get_template_directory_uri(); ?>/images/escontil-logo.png" alt="Escontil Associados"></li>
+          <li><a href="/">Ínicio</a></li>
+          <li><a href="/quem-somos/">Quem Somos</a></li>
+          <li><a href="/servicos/">Serviços</a></li>
+          <li><a href="/clientes/">Clientes</a></li>
+          <li><a href="/parceiros/">Parceiros</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contato/">Contato</a></li>
+          <label class="menu-toggler-icon-close" for="menu-toggler">
+            <i class="fas fa-times"></i> Fechar
+          </label> 
+        </ul><!--menu-topo-->
+      
         <?php
-        	$args = array(
+        	/*$args = array(
             'menu' => 'principal',
             'theme_location' => 'header-menu',
             'container' => false
           );
-          wp_nav_menu( $args );
+          wp_nav_menu( $args );*/
         ?>
       </nav>
       
