@@ -7,6 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
+  <meta name="description" content="Escontil Contadores Associados. Soluções de Gestão Empresarial e Contábeis.">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Escontil Contadores Associados"/>
+  <meta property="og:description" content="Soluções de Gestão Empresarial e Contábeis."/>
+  <meta property="og:url" content="https://escontilassociados.com.br"/>
+  <meta property="og:image" content="https://escontilassociados.com.br/wp-content/themes/escontil-theme/images/escontil-logo-circular.png" />
+
+  <link rel="shortcut icon" href="favicon.ico">
+
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
