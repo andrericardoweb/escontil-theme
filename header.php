@@ -7,22 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-  <meta name="description" content="Escontil Contadores Associados. Soluções de Gestão Empresarial e Contábeis.">
+  <meta name="description" content="<?php bloginfo('name'); wp_title('-'); the_field('description_seo'); ?>">
 
   <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Escontil Contadores Associados"/>
-  <meta property="og:description" content="Soluções de Gestão Empresarial e Contábeis."/>
-  <meta property="og:url" content="https://escontilassociados.com.br"/>
-  <meta property="og:image" content="https://escontilassociados.com.br/wp-content/themes/escontil-theme/images/escontil-logo-circular.png" />
+  <meta property="og:title" content="<?php bloginfo('name'); wp_title('-'); the_field('title_seo'); ?>"/>
+  <meta property="og:description" content="<?php bloginfo('name'); wp_title('-'); the_field('description_seo'); ?>"/>
+  <meta property="og:url" content="<?php bloginfo('url'); ?>"/>
+  <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/escontil-logo-circular.png" />
 
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/16bd46d00e.js" crossorigin="anonymous"></script>
   
