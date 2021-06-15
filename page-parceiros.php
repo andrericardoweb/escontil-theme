@@ -9,12 +9,11 @@
   <!-- BANNER - INTRO -->
   <?php include(TEMPLATEPATH . "/inc/introducao.php"); ?>
 
-  <!-- PÁG. CLIENTES -->
+  <!-- PÁG. PARCEIROS -->
 
-  <!-- SERVIÇOS -->
   <section class="container parceiros-container">
-    <p><?php the_field('parceiros_introducao'); ?></p>
-    <div class="parceiros-interno">
+    <p data-anime="800" class="fadeInDown"><?php the_field('parceiros_introducao'); ?></p>
+    <div data-anime="1200" class="parceiros-interno">
 
       <?php if(have_rows('item_parceiros_logo')) : while(have_rows('item_parceiros_logo')) : the_row() ?>
         
