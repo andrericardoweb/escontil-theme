@@ -13,8 +13,8 @@
 
   <!-- SERVIÇOS -->
   <section class="container clientes-container">
-    <p><?php the_field('clientes_introducao'); ?></p>
-    <div class="clientes-interno">
+    <p data-anime="800" class="fadeInDown"><?php the_field('clientes_introducao'); ?></p>
+    <div data-anime="1200" class="clientes-interno">
     
       <?php if(have_rows('item_clientes_logo')) : while(have_rows('item_clientes_logo')) : the_row() ?>
       
