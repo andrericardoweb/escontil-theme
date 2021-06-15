@@ -1713,4 +1713,29 @@ img {
   transition: transform .8s, opacity .8s;
 }
 
-/* 7 CSS personalizado dependendo da animação desejada */
+/*FormPHP*/
+label.nao-aparece, input.nao-aparece {
+	display: none !important;
+}
+#form-erro span, #form-send span  {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#form-sucesso h3 {
+	font-size: 2em;
+}
+
+#form-sucesso h3, #form-sucesso p {
+	color: #31aa39;
+}
+
+#form-erro h3 {
+	font-size: 2em;
+}
+
+#form-erro h3, #form-erro p {
+	color: #f64540;
+}

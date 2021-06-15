@@ -16,7 +16,7 @@
 
       <div data-anime="1200" class="fadeInLeft contato-form-container">
       
-        <form action="enviar.php" method="post" name="form" class="contato-form">
+        <form action="<?php echo get_template_directory_uri(); ?>/enviar.php" method="post" name="form" class="contato-form formphp">
           <div class="contato-form-item">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -35,13 +35,18 @@
 
           </div>
 
+          <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+          <input type="text" class="nao-aparece" name="leaveblank">
+          <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+          <input type="text" class="nao-aparece" name="dontchange" value="http://" >
+
           <div class="contato-form-item">
             <label for="mensagem">Mensagem: </label>
             <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="4" required></textarea>
           </div>
 
           <div>
-            <button type="submit" id="enviar-msg" name="enviar-msg" class="btn-contato">Enviar mensagem</button>
+            <button type="submit" id="enviar" name="enviar" class="btn-contato">Enviar mensagem</button>
           </div>
 
           
