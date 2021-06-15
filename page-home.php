@@ -7,20 +7,20 @@
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
   <!-- Banner - Home -->
   <section class="banner">
-    <h1><?php the_field('titulo_banner'); ?></h1>
-    <h2><?php the_field('slogan_banner'); ?></h2>
-    <div class="banner-btn">
+    <h1 data-anime="400" class="fadeInDown"><?php the_field('titulo_banner'); ?></h1>
+    <h2 data-anime="800" class="fadeInDown"><?php the_field('slogan_banner'); ?></h2>
+    <div data-anime="1200" class="banner-btn" >
       <a class="btn-whatsapp-banner" href="https://api.whatsapp.com/send?phone=558236211108" target="_blank">Atendimento via WhatsApp</a>
     </div>  
   </section><!-- /banner -->
 
   <!-- Serviços -->
   <section class="container servicos-container">
-    <h2>Áreas de atuação</h2>
+    <h2 data-anime="1400" class="fadeInDown">Áreas de atuação</h2>
     <div class="servicos">
 
     <?php if(have_rows('item_servicos_home')) : while(have_rows('item_servicos_home')) : the_row() ?>
-    <div class="servicos-item">
+    <div data-anime="1600" class="fadeInUp servicos-item">
         <h3><?php the_sub_field('servicos_titulo_home'); ?></h3>
         <p><?php the_sub_field('servicos_descricao_home'); ?></p>
         <div class="servicos-img">
