@@ -17,15 +17,15 @@
 
     <?php if(have_rows('item_servicos')) : while(have_rows('item_servicos')) : the_row() ?>
 
-      <div class="servicos-interno-item">
+      <div data-anime="800" class="servicos-interno-item">
         <div class="servicos-interno-item-titulo">
-          <h3><?php the_sub_field('servicos_titulo'); ?></h3>
-          <img src="<?php the_sub_field('servicos_image'); ?>">         
+          <h3 data-anime="1000" class="fadeInLeft"><?php the_sub_field('servicos_titulo'); ?></h3>
+          <img data-anime="1000" class="fadeInRight" src="<?php the_sub_field('servicos_image'); ?>">         
         </div>
         
-        <p><?php the_sub_field('servicos_descricao'); ?> </p>
+        <p data-anime="1000" class="fadeInUp"><?php the_sub_field('servicos_descricao'); ?> </p>
         
-        <div class="servicos-interno-btn">
+        <div data-anime="1000" class="fadeInUp servicos-interno-btn">
           <a href="<?php the_sub_field('servicos_link'); ?>">Saiba mais <i class="fas fa-angle-right"></i></a>
         </div>
 
