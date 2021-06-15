@@ -15,7 +15,7 @@
   <meta property="og:url" content="https://escontilassociados.com.br"/>
   <meta property="og:image" content="https://escontilassociados.com.br/wp-content/themes/escontil-theme/images/escontil-logo-circular.png" />
 
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
