@@ -23,9 +23,6 @@
     href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/16bd46d00e.js" crossorigin="anonymous"></script>
-  
-  <!-- Styles -->
-  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
   <title><?php bloginfo('name'); wp_title(' - '); ?> </title>
 

@@ -1,25 +1,18 @@
 <?php
 
-// Registrar o CSS e o JS
-/*
+//Função para registrar os scripts e css
 function escontil_scripts() {
-	// Desregistra o jQuery do Wordpress
-	wp_deregister_script('jquery');
-
-	// Registra o jQuery Novo
-	wp_register_script( 'jquery', get_template_directory_uri() . '/js/libs/jquery-1.11.2.min.js', array(), "1.11.2", true );
-
-	// Registra o Script de Plugins, com dependência do jquery, sem especificar versão e no footer do site
-	wp_register_script( 'plugins-script', get_template_directory_uri() . '/js/plugins.js', array( 'jquery' ), false, true );
-
-	// Registra o Script Principal, com dependência do jquery e plugins, sem especificar versão e no footer do site
-	wp_register_script( 'main-script', get_template_directory_uri() . '/js/main.js', array( 'jquery', 'plugins-script' ), false, true );
-
-	// Coloca script no site
+	// Registrar Anime, Slide e Form
+	wp_register_script( 'simple-anime', get_template_directory_uri() . '/js/simple-anime.js', array(), false, true );
+	wp_register_script( 'simple-slide', get_template_directory_uri() . '/js/simple-slide.js', array(), false, true );
+	wp_register_script( 'simple-form', get_template_directory_uri() . '/js/simple-form.js', array(), false, true );
+	
+	// Registrar Script
+	wp_register_script( 'main-script', get_template_directory_uri() . '/js/script.js', array( 'simple-anime', 'simple-slide', 'simple-form' ), false, true );
+	
 	wp_enqueue_script( 'main-script' );
 }
 add_action( 'wp_enqueue_scripts', 'escontil_scripts' );
-*/
 
 function escontil_css() {
   wp_register_style( 'escontil-style', get_template_directory_uri() . '/style.css', array(), false, false );
