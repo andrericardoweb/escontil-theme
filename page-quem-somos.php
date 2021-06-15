@@ -10,10 +10,10 @@
 
   <!-- Quem Somos -->
   <section class="container quem-somos">
-    <div class="flex-item-1 quem-somos-img">
+    <div data-anime="800" class="fadeInLeft flex-item-1 quem-somos-img">
       <img src="<?php the_field('quemsomos_img'); ?>" alt="">
     </div>
-    <div class="flex-item-2 quem-somos-txt">
+    <div data-anime="800" class="fadeInRight flex-item-2 quem-somos-txt">
       <p class="quem-somos-txt-destaque"><?php the_field('quemsomos_txt_destaque'); ?></p>
 
       <?php the_field('quemsomos_txt'); ?>
@@ -26,19 +26,19 @@
   <section class="missa-visao-valores-bg">
     <div class="container missa-visao-valores">
       <div class="flex-item-1 missa-visao-valores-item">
-        <div class="missao-item">
+        <div data-anime="1200" class="missao-item">
           <h3>Missão</h3>
           <p><?php the_field('quemsomos_missao'); ?></p>
         </div>
 
-        <div class="visao-item">
+        <div data-anime="1300" class="visao-item">
           <h3>Visão</h3>
           <p><?php the_field('quemsomos_visao'); ?></p>
         </div>
       </div><!--missa-visao-valores-item-->
 
       <div class="flex-item-2 missa-visao-valores-item">
-        <div class="valores-item">
+        <div data-anime="1400" class="valores-item">
           <h3>Valores</h3>
           <ul>
 
