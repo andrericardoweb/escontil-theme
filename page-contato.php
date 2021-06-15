@@ -11,10 +11,10 @@
 
   <!--contato-->
   <section class="container contato-container">
-    <h2>Entre em contato conosco</h2>
+    <h2 data-anime="800" class="fadeInDown">Entre em contato conosco</h2>
     <div class="contato">
 
-      <div class="contato-form-container">
+      <div data-anime="1200" class="fadeInLeft contato-form-container">
       
         <form action="enviar.php" method="post" name="form" class="contato-form">
           <div class="contato-form-item">
@@ -48,7 +48,7 @@
         </form>
       </div>
 
-      <div class="contato-whatsapp">
+      <div data-anime="1200" class="fadeInRight contato-whatsapp">
         <div class="contato-box-whatsapp">
           <h3>Fale conosco diretamente através do nosso Whatsapp</h3>
           
