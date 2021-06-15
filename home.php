@@ -3,14 +3,14 @@
   <!-- BANNER -->
   <section class="banner-page">
     <div class="container">
-      <h2>Blog</h2>
+      <h2 data-anime="400" class="fadeInDown">Blog</h2>
     </div>
   </section>
 
   <!--Últimas Publicações-->
   <section class="container blog-bg">
-    <h2>Últimas Publicações</h2>
-    <div class="container blog-container">
+    <h2 data-anime="800" class="fadeInDown">Últimas Publicações</h2>
+    <div data-anime="800" class="fadeInUp container blog-container">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
