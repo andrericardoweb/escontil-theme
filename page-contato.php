@@ -32,7 +32,6 @@
               <label for="telefone">Telefone:</label>
               <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" class="contato-form-item" required>
             </div>
-
           </div>
 
           <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>

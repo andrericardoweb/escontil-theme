@@ -2,7 +2,7 @@
 
 // Trocar os valores abaixo
 $emailenvio = 'contato@escontilassociados.com.br';
-$assunto = 'Contato do Site - Escontil Contadores Associados';
+$assunto = 'Sugestões do Site - escontilassociados';
 $url = 'https://escontilassociados.com.br';
 
 // Mude até aqui apenas
